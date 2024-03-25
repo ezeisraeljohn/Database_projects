@@ -2,6 +2,7 @@
 
 """ This module defines the BaseTable class which inherits from the Base class. """
 
+from db_storage import DBStorage
 from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 from sqlalchemy import Column, DateTime, String
@@ -22,6 +23,9 @@ class BaseTable():
                 __repr__ : A method that returns a string representation
                 of the object.
             """
+        def __init__(self):
+               DBStorage().reload()
+
         __abstract__ = True
 
         # created_at attribute using datetime.utcnow() function
