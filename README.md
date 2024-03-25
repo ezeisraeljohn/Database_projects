@@ -1,5 +1,7 @@
 # Project Name
 
+Online Shopping Database
+
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Description
